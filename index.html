@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muslimah Fashion</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fdfaf6;
+      color: #333;
+    }
+
+    header {
+      background-color: #e8d9c7;
+      padding: 20px;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2em;
+      color: #5a3e36;
+      animation: fadeIn 2s ease;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background-color: #f3ede7;
+      padding: 10px;
+    }
+
+    nav a {
+      position: relative;
+      text-decoration: none;
+      color: #5a3e36;
+      font-weight: bold;
+      padding: 5px 0;
+      transition: color 0.3s ease;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #b48b6f;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    nav a:hover {
+      color: #b48b6f;
+    }
+
+    .hero {
+      background-image: url('https://source.unsplash.com/featured/?muslimah,fashion');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2em;
+      font-family: 'Playfair Display', serif;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+      animation: fadeIn 2s ease;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #fff;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      animation: fadeIn 1.2s ease;
+    }
+
+    .section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: #5a3e36;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .section h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background-color: #b48b6f;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    .section p {
+      max-width: 700px;
+      margin: 0 auto 20px;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .product {
+      width: 250px;
+      border: 1px solid #e8d9c7;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      background-color: #fff;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product h3 {
+      margin: 10px;
+      font-family: 'Playfair Display', serif;
+      color: #5a3e36;
+    }
+
+    .product p {
+      margin: 0 10px 10px;
+      font-size: 0.9em;
+    }
+
+    #kontak ul {
+      margin-top: 20px;
+      font-size: 1rem;
+      color: #5a3e36;
+      list-style: none;
+      padding: 0;
+    }
+
+    #kontak ul li {
+      margin-bottom: 10px;
+    }
+
+    .whatsapp-button {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1ebe5d;
+    }
+
+    footer {
+      background-color: #e8d9c7;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      .products {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .product {
+        width: 90%;
+      }
+
+      .section {
+        padding: 40px 15px;
+      }
+
+      .section h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Muslimah Fashion</header>
+  <nav>
+    <a href="#beranda">Beranda</a>
+    <a href="#koleksi">Koleksi</a>
+    <a href="#tentang">Tentang Kami</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <div class="hero" id="beranda">Elegan & Anggun</div>
+
+  <section class="section">
+    <h2>Selamat Datang di Muslimah Fashion</h2>
+    <p>Kami menghadirkan koleksi pakaian muslimah yang elegan, anggun, dan nyaman dipakai untuk berbagai kesempatan.</p>
+  </section>
+
+  <section id="koleksi" class="section">
+    <h2>Koleksi Unggulan</h2>
+    <div class="products">
+      <div class="product">
+        <img src="HijabKekinian.jpg" alt="Hijab Elegan">
+        <h3>Hijab Elegan</h3>
+        <p>Material premium, cocok untuk acara formal.</p>
+      </div>
+      <div class="product">
+        <img src="abaya.webp" alt="Abaya Modern">
+        <h3>Abaya Modern</h3>
+        <p>Desain minimalis dengan sentuhan klasik.</p>
+      </div>
+      <div class="product">
+        <img src="waw.jpg" alt="Dress Muslimah">
+        <h3>Dress Muslimah</h3>
+        <p>Nyaman dipakai sehari-hari dan tetap stylish.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tentang" class="section">
+    <h2>Tentang Kami</h2>
+    <p>Muslimah Fashion adalah brand lokal yang berkomitmen menghadirkan busana muslimah berkualitas tinggi dengan desain yang elegan dan modern. Kami percaya bahwa setiap wanita berhak tampil cantik dan percaya diri tanpa mengorbankan kenyamanan.</p>
+  </section>
+
+  <section id="kontak" class="section">
+    <h2>Kontak Kami</h2>
+    <p>Ingin bertanya atau bekerja sama? Hubungi kami melalui:</p>
+    <ul>
+      <li><strong>Email:</strong> info@muslimahfashion.id</li>
+      <li><strong>WhatsApp:</strong> +62 877-7253-3481</li>
+      <li><strong>Instagram:</strong> @muslimahfashion.id</li>
+    </ul>
+    <p>
+      <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20tertarik%20dengan%20produk%20Muslimah%20Fashion" target="_blank" class="whatsapp-button">
+        Kirim Pesan via WhatsApp
+      </a>
+    </p>
+  </section>
+
+  <footer>&copy; 2025 Muslimah Fashion. All rights reserved.</footer>
+</body>
+</html>
